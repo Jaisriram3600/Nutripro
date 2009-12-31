@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blogspot.techyfruit360.nutripro.Main3Activity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:elevation="0dp"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/appbarid">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/wheat"
+        android:id="@+id/far"/>
+
+</android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayou"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#000"
+        app:tabMode="fixed"
+        app:tabTextColor="#000">
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_id">
+
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maize"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Area in Acre"
+        android:gravity="center"
+        android:maxLength="4"
+        android:inputType="numberSigned"
+        android:id="@+id/ev"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate fertilizer"
+        android:textColor="#000"
+        android:id="@+id/btn"
+        android:background="@drawable/kk"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv2"
+        />
+</LinearLayout>

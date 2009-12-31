@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Nutripro</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">or</string>
+    <string name="title_location_permission">Hello</string>
+    <string name="text_location_permission">bye</string>
+    <string name="ok">ok</string>
+</resources>

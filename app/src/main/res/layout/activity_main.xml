@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99D9EA"
+    tools:context="com.blogspot.techyfruit360.nutripro.MainActivity">
+
+
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+<RelativeLayout
+    android:layout_weight="2"
+    android:layout_width="match_parent"
+
+    android:layout_height="0dp">
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:id="@+id/logout"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="delete"
+        android:id="@+id/dlte"/>
+
+ <!-- <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:textColor="#000"
+        android:textSize="24sp"
+      android:textStyle="bold" />
+      -->
+</RelativeLayout>
+
+
+
+        <!--Hello This is grid-->
+    <GridLayout
+        android:id="@+id/maingrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="14dp"
+        android:columnOrderPreserved="false"
+        android:alignmentMode="alignMargins">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/soilcard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffff"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOIL"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shovel"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cropcard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#ffff"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CROP"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/crop"
+            android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+        <!--3rd card view-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/fertilizercard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="#ffff"
+
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FERTILIZER"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fertilizer"
+                android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/moisturecard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#ffff"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MOISTURE"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/drop" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="#fff"
+
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/locatio"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="current location"
+                                android:textColor="#000"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/weather"
+                                android:textColor="#000"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="78dp"
+                                android:layout_marginRight="78dp"
+                                android:layout_marginTop="6dp"
+                                android:textSize="55dp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="4dp"
+                            android:textColor="#000"
+                            android:textSize="34dp" />
+
+                        <RelativeLayout
+                            android:layout_width="214dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/locationText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginEnd="14dp"
+                                android:layout_marginRight="14dp" />
+
+                            <TextView
+                                android:id="@+id/description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginEnd="54dp"
+                                android:layout_marginRight="54dp"
+                                android:hint="waiting for network"
+                                android:textColor="#000"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/recommednd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#fff"
+
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

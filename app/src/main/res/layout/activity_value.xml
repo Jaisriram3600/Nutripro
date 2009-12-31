@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.blogspot.techyfruit360.nutripro.Value">
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/moist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:hint="Plug the sensor to the soil"
+        android:textColor="#fff"
+        android:textSize="29dp" />
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/soil"
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/circularProgressbar"
+        android:layout_alignStart="@+id/circularProgressbar"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="45%"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/th"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="Soil moisture"
+        android:textColor="#000"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/moist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circularProgressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textColor="#000"
+        android:textSize="32sp" />
+</RelativeLayout>
