@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <item
+        android:id="@+id/logout2"
+        android:title="Account"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/logout4"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="delete"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/logout5"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Thanks"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="logout"
+        app:showAsAction="never">
+
+    </item>
+</menu>
