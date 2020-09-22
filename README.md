@@ -20,8 +20,8 @@
  <img height ="450" src="https://github.com/Jaisriram3600/Nutripro/blob/master/app/src/main/res/drawable/Screenshot_2020-09-14-22-35-18-984_com.blogspot.techyfruit360.nutripro.jpg"/>
  <table>
   <tr>
-    <h1>Soil Crop and Moisture Result</h1>
-   
+    <h1>Soil, Crop and Moisture Result</h1>
+    <p>These values are transferred from the Raspberry Pi using MQTT</p>
   
   <td> <img height ="450" src="https://github.com/Jaisriram3600/Nutripro/blob/master/app/src/main/res/drawable/Screenshot_2020-09-14-22-35-45-744_com.blogspot.techyfruit360.nutripro.jpg"/></td>
   <td><img height ="450" src="https://github.com/Jaisriram3600/Nutripro/blob/master/app/src/main/res/drawable/Screenshot_2020-09-14-22-35-36-399_com.blogspot.techyfruit360.nutripro.jpg"/></td>
